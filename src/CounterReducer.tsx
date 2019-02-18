@@ -26,10 +26,7 @@ const reducer = (state: State, action: Action): State => {
 };
 
 const CounterReducer = () => {
-  const [state, dispatch] = React.useReducer<State, Action>(
-    reducer,
-    initialState
-  );
+  const [state, dispatch] = React.useReducer(reducer, initialState);
 
   return (
     <>
